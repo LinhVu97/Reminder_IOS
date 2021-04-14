@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddViewController" customModule="Remider" customModuleProvider="target">
+            <connections>
+                <outlet property="bodyRemider" destination="8Hv-7W-9T4" id="xEM-Tr-y6F"/>
+                <outlet property="datePicker" destination="Jxs-B5-G4q" id="vPa-5y-dKZ"/>
+                <outlet property="titleRemider" destination="AEe-Rr-NFp" id="Gyy-3K-UWp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter title ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AEe-Rr-NFp">
+                    <rect key="frame" x="10" y="54" width="394" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter body ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Hv-7W-9T4">
+                    <rect key="frame" x="10" y="108" width="394" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="Jxs-B5-G4q">
+                    <rect key="frame" x="10" y="152" width="414" height="700"/>
+                </datePicker>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray2Color"/>
+            <constraints>
+                <constraint firstItem="Jxs-B5-G4q" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="10" id="5R0-k7-xcS"/>
+                <constraint firstItem="8Hv-7W-9T4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="YOU-wB-uPg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Jxs-B5-G4q" secondAttribute="bottom" constant="10" id="Zaf-ho-r0B"/>
+                <constraint firstItem="Jxs-B5-G4q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="amA-eB-aAa"/>
+                <constraint firstItem="AEe-Rr-NFp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="d5g-T8-VIY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AEe-Rr-NFp" secondAttribute="trailing" constant="10" id="lWb-VC-e0g"/>
+                <constraint firstItem="8Hv-7W-9T4" firstAttribute="top" secondItem="AEe-Rr-NFp" secondAttribute="bottom" constant="20" id="qtp-cy-HWM"/>
+                <constraint firstItem="Jxs-B5-G4q" firstAttribute="top" secondItem="8Hv-7W-9T4" secondAttribute="bottom" constant="10" id="v16-pB-Gqt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Hv-7W-9T4" secondAttribute="trailing" constant="10" id="vP5-Co-WNC"/>
+                <constraint firstItem="AEe-Rr-NFp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="y2F-OC-qgO"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="85.714285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
